@@ -73,12 +73,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: apollo
-archive_generator:
-    per_page: 0
-    yearly: false
-    monthly: false
-    daily: false
+theme: landscape
+# archive_generator:
+#     per_page: 0
+#     yearly: false
+#     monthly: false
+#     daily: false
 
 tag_cloud:
     textFont: Trebuchet MS, Helvetica
@@ -86,6 +86,11 @@ tag_cloud:
     textHeight: 25
     outlineColor: '#E2E1D1'
     maxSpeed: 0.5
+
+archive_generator:
+  per_page: 20  //为0时表示不分页全展示
+  yearly: true  //按年生成归档
+  monthly: true //按月生成归档    
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
