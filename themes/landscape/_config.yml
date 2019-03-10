@@ -35,3 +35,16 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# valine comment system. https://valine.js.org
+valine:
+  enable: true # if you want use valine,please set this value is ture
+  appId: SsvyUdsLwD4Sji69ldwi1ShE-gzGzoHsz
+  appKey: LJXErqDX70Nd9YlJM34rWvE8
+  notify: true # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # valine verify code (true/false)
+  pageSize: 10 # comment list page size
+  avatar: mm # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: 如指错误，感激不尽 # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info

@@ -80,13 +80,6 @@ theme: landscape
 #     monthly: false
 #     daily: false
 
-tag_cloud:
-    textFont: Trebuchet MS, Helvetica
-    textColor: '#333'
-    textHeight: 25
-    outlineColor: '#E2E1D1'
-    maxSpeed: 0.5
-
 archive_generator:
   per_page: 20  //为0时表示不分页全展示
   yearly: true  //按年生成归档
