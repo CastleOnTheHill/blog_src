@@ -27,4 +27,21 @@ USD ****1.23
 ***USD *1.23
 ```
 ## 设置浮点数精度
-`setprecision(n)`单独使用，精度n指的是**整个浮点数的位数**，而不是小数的位数，需要先使用`fixed`，用定点记法生成浮点类型，之后小数的位数就是n了（为什么会这样还不清楚）。[定点数的解释](https://baike.baidu.com/item/%E5%AE%9A%E7%82%B9%E6%95%B0/11030127?fr=aladdin)
+`setprecision(n)`单独使用，精度n指的是**整个浮点数的位数**，而不是小数的位数，如果浮点数的整数部分位数大于n，那么会采用科学计数法输出，保证n位。
+
+`setprecision(n)`与`fixed`(用定点记法生成浮点类型)同时使用，输出浮点数的小数位数就是n了（为什么会这样还不清楚）。[定点数的解释](https://baike.baidu.com/item/%E5%AE%9A%E7%82%B9%E6%95%B0/11030127?fr=aladdin)
+
+```cpp
+double x = 131235.1415, y = 3.14159;
+cout << setprecision(4);
+//整个浮点数保留4位
+cout << x << endl; //1.312e+005
+cout << y << endl; //3.142
+
+cout << fixed;
+// 小数部分保留4位
+cout << x << endl;//131235.1415
+cout << y << endl;//3.1416
+
+
+```
