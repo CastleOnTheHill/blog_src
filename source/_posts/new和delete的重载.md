@@ -65,4 +65,4 @@ class Foo {
 
 如果重载了new和delete却不想使用，可以`::new`和`::delete`调用默认的`operator new`和`operator delete`。
 
-> 参考 C++程序设计
+> 参考 侯捷 C++程序设计
