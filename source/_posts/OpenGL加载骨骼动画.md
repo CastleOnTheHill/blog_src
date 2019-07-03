@@ -193,6 +193,7 @@ struct Vertex {
 		}
 	}
 ```
+### 将骨骼姿态作用在顶点上
 
 最后将计算好的所有的骨骼姿态传入着色器中：
 
@@ -238,7 +239,7 @@ void main()
 
 ## Code
 
-扩展后的完整的[Mesh](https://github.com/sysu-cg16/Code/blob/master/CGFinalProject/AnimatedMesh.h )和[Model](https://github.com/sysu-cg16/Code/blob/master/CGFinalProject/AnimatedModel.h )
+扩展后完整的[Mesh](https://github.com/sysu-cg16/Code/blob/master/CGFinalProject/AnimatedMesh.h )和[Model](https://github.com/sysu-cg16/Code/blob/master/CGFinalProject/AnimatedModel.h )
 
 ## 参考
 
